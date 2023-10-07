@@ -80,6 +80,20 @@ a {
     margin: 0 auto;
 }
 
+.section-heading {
+    font-weight: 700;
+    font-size: 5.2rem;
+    line-height: 1.1;
+    color: #000958;
+}
+
+.section-desc {
+    margin-top: 24px;
+    font-size: 1.6rem;
+    line-height: 1.88;
+    color: #656689;
+}
+
 /* Header */
 .header {
     padding: 26px 0;
@@ -269,7 +283,7 @@ a {
     box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
     font-size: 1.6rem;
 }
-.hero__desc{
+.hero__desc {
     width: 391px;
 }
 
@@ -279,4 +293,139 @@ a {
     font-size: 1.6rem;
     font-weight: 500;
     text-decoration: underline;
+}
+
+/* Ablout */
+.about {
+    margin-top: 138px;
+}
+
+.about__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.about__media {
+    position: relative;
+}
+
+.about__label {
+    color: #5e6085;
+    font-family: Sora;
+    font-size: 1.6rem;
+}
+.about__heading,
+.about__desc {
+    width: 444px;
+}
+
+.about__heading {
+    margin-top: 15px;
+    font-family: Sora;
+    font-size: 5.2rem;
+    font-weight: 700;
+}
+
+.about__desc {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.about__check-list {
+    margin-top: 54px;
+    display: grid;
+    justify-content: flex-start;
+    grid-template-columns: auto auto;
+    gap: 34px;
+}
+
+.about__check-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: #48496a;
+    font-family: Poppins;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.about__check-item::after {
+    content: url(../icon/check.svg);
+    display: inline-block;
+    position: absolute;
+    top: 2px;
+    left: 5px;
+}
+
+.about__check-item::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: #ff5d31;
+    box-shadow: 0px 4px 15px -3px rgba(255, 93, 49, 0.69);
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.about__card {
+    position: absolute;
+    top: 165px;
+    left: 0;
+    width: 136px;
+    text-align: center;
+    border-radius: 10px;
+    background: #5bd6e2;
+    box-shadow: -15px 26px 48px 0px rgba(85, 240, 255, 0.17);
+    padding: 30px 26px;
+}
+
+.about__card-title {
+    color: #fff;
+    font-family: Sora;
+    font-size: 4.2rem;
+    font-weight: 700;
+}
+
+.about__card-desc {
+    color: #c6f4f9;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+}
+
+.about__card-decor {
+    position: absolute;
+    top: -40px;
+    right: -32px;
+}
+
+.about__img-wrap {
+    position: relative;
+    width: 494px;
+    margin-left: auto;
+}
+.about__img-wrap::after {
+    position: absolute;
+    inset: auto 0 0 0;
+    content: "";
+    height: 336px;
+    background: linear-gradient(180deg, #fce0ef 0%, #fac3d1 100%);
+    border-radius: 16px;
+    z-index: -1;
+}
+
+.about__img {
+    width: 450px;
+    display: block;
+    margin: 0 auto;
+}
+
+.about__media-decor {
+    position: absolute;
+    top: 157px;
+    right: -50px;
+    z-index: -1;
 }
