@@ -718,48 +718,52 @@ a {
     content: "";
     position: absolute;
     width: 100%;
-    height: 266px;
+    height: 94%;
     background: #90ccff;
     border-radius: inherit;
     bottom: 0;
     left: 0;
 }
 .staff__img-wrap::after {
-    content: url(../img/staff-decor-01.svg);
+    content: "";
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     bottom: 0;
+    width: calc(100% + 36px);
+    height: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 .staff-item:nth-child(1) .staff__img-wrap::after {
-    content: url(../img/staff-decor-01.svg);
+    background-image: url(../img/staff-decor-01.svg);
 }
 
 .staff-item:nth-child(2) .staff__img-wrap::before {
     background: linear-gradient(180deg, #ff997e 0%, #f3752e 100%);
 }
 .staff-item:nth-child(2) .staff__img-wrap::after {
-    content: url(../img/staff-decor-02.svg);
+    background-image: url(../img/staff-decor-02.svg);
 }
 
 .staff-item:nth-child(3) .staff__img-wrap::before {
     background: linear-gradient(180deg, #fabf3e 0%, #ffa14a 100%);
 }
 .staff-item:nth-child(3) .staff__img-wrap::after {
-    content: url(../img/staff-decor-03.svg);
+    background-image: url(../img/staff-decor-03.svg);
 }
 
 .staff-item:nth-child(4) .staff__img-wrap::before {
     background: linear-gradient(180deg, #5bd6e2 0%, #00a7cc 100%);
 }
 .staff-item:nth-child(4) .staff__img-wrap::after {
-    content: url(../img/staff-decor-04.svg);
+    background-image: url(../img/staff-decor-04.svg);
 }
 
 .staff-item:nth-child(even) .staff__img-wrap::after {
-    bottom: auto;
-    top: 16px;
+    background-position: 0 16px;
 }
 
 .staff-item__title {
