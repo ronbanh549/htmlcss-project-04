@@ -792,3 +792,82 @@ a {
     color: #ff5b2e;
     border: 1px solid #ff5b2e;
 }
+
+/* Pricing */
+.pricing {
+    padding: 86px 0;
+    background: #fff6ed;
+}
+
+.pricing__top {
+    text-align: center;
+}
+
+.pricing__desc {
+    display: inline-block;
+    width: 709px;
+}
+
+.pricing__switch-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 38px;
+}
+
+.pricing__switch-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 276px;
+    height: 56px;
+    padding: 0 40px;
+    border-radius: 99px;
+    border: 1px solid rgba(255, 91, 46, 0.6);
+    user-select: none;
+}
+
+.pricing__switch-label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 146px;
+    height: 100%;
+    background: #ff5b2e;
+    border-radius: inherit;
+}
+
+.pring__switch-value {
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    font-family: Poppins;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.pricing__switch-input:checked + .pricing__switch-label::before {
+    width: 131px;
+    left: auto;
+    right: 0;
+}
+
+.pricing__switch-input:not(:checked)
+    + .pricing__switch-label
+    .pring__switch-value:nth-of-type(2),
+.pricing__switch-input:checked
+    + .pricing__switch-label
+    .pring__switch-value:nth-of-type(1) {
+    color: #ff5b2e;
+}
+
+.pricing__switch-inner {
+    position: relative;
+}
+
+.pricing-sale-off {
+    position: absolute;
+    top: -10px;
+    right: -102px;
+}
